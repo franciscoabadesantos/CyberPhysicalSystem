@@ -1,0 +1,192 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.11.0
+2 info using node@v16.16.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 3ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 1ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 2ms
+15 timing config:load:global Completed in 2ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 16ms
+20 timing npm:load:configload Completed in 16ms
+21 timing npm:load:mkdirpcache Completed in 4ms
+22 timing npm:load:mkdirplogs Completed in 0ms
+23 verbose title npm install node-red-node-mongodb@0.2.5
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-node-mongodb@0.2.5"
+25 timing npm:load:setTitle Completed in 1ms
+26 timing config:load:flatten Completed in 2ms
+27 timing npm:load:display Completed in 5ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-05-17T15_48_54_273Z-debug-0.log
+30 timing npm:load:logFile Completed in 5ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 32ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 61ms
+37 timing idealTree:userRequests Completed in 1ms
+38 silly idealTree buildDeps
+39 silly fetch manifest node-red-node-mongodb@0.2.5
+40 timing arborist:ctor Completed in 0ms
+41 http fetch GET 200 https://registry.npmjs.org/node-red-node-mongodb 900ms (cache miss)
+42 silly placeDep ROOT node-red-node-mongodb@0.2.5 OK for: node-red-project@0.0.1 want: 0.2.5
+43 silly fetch manifest mongodb@^3.6.3
+44 http fetch GET 200 https://registry.npmjs.org/mongodb 794ms (cache miss)
+45 timing idealTree:#root Completed in 1711ms
+46 silly placeDep ROOT mongodb@3.7.3 OK for: node-red-node-mongodb@0.2.5 want: ^3.6.3
+47 silly fetch manifest bl@^2.2.1
+48 silly fetch manifest bson@^1.1.4
+49 silly fetch manifest denque@^1.4.1
+50 silly fetch manifest optional-require@^1.1.8
+51 silly fetch manifest saslprep@^1.0.0
+52 http fetch GET 200 https://registry.npmjs.org/bl 80ms (cache miss)
+53 http fetch GET 200 https://registry.npmjs.org/denque 85ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/optional-require 759ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/bson 818ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/saslprep 880ms (cache miss)
+57 timing idealTree:node_modules/node-red-node-mongodb Completed in 884ms
+58 silly placeDep ROOT bl@2.2.1 OK for: mongodb@3.7.3 want: ^2.2.1
+59 silly placeDep ROOT bson@1.1.6 OK for: mongodb@3.7.3 want: ^1.1.4
+60 silly placeDep ROOT denque@1.5.1 OK for: mongodb@3.7.3 want: ^1.4.1
+61 silly placeDep ROOT optional-require@1.1.8 OK for: mongodb@3.7.3 want: ^1.1.8
+62 silly placeDep ROOT saslprep@1.0.3 OK for: mongodb@3.7.3 want: ^1.0.0
+63 silly fetch manifest readable-stream@^2.3.5
+64 silly fetch manifest require-at@^1.0.6
+65 silly fetch manifest sparse-bitfield@^3.0.3
+66 http fetch GET 200 https://registry.npmjs.org/readable-stream 46ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/require-at 791ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/sparse-bitfield 792ms (cache miss)
+69 timing idealTree:node_modules/mongodb Completed in 799ms
+70 silly placeDep ROOT readable-stream@2.3.8 OK for: bl@2.2.1 want: ^2.3.5
+71 silly fetch manifest core-util-is@~1.0.0
+72 silly fetch manifest isarray@~1.0.0
+73 silly fetch manifest process-nextick-args@~2.0.0
+74 silly fetch manifest string_decoder@~1.1.1
+75 silly fetch manifest util-deprecate@~1.0.1
+76 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 39ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/util-deprecate 55ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/core-util-is 57ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/isarray 58ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/string_decoder 59ms (cache miss)
+81 timing idealTree:node_modules/bl Completed in 64ms
+82 timing idealTree:node_modules/bson Completed in 0ms
+83 timing idealTree:node_modules/denque Completed in 0ms
+84 silly placeDep ROOT require-at@1.0.6 OK for: optional-require@1.1.8 want: ^1.0.6
+85 timing idealTree:node_modules/optional-require Completed in 1ms
+86 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+87 silly placeDep ROOT isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+88 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+89 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+90 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+91 timing idealTree:node_modules/readable-stream Completed in 5ms
+92 timing idealTree:node_modules/core-util-is Completed in 0ms
+93 timing idealTree:node_modules/isarray Completed in 0ms
+94 timing idealTree:node_modules/process-nextick-args Completed in 0ms
+95 timing idealTree:node_modules/require-at Completed in 1ms
+96 silly placeDep ROOT sparse-bitfield@3.0.3 OK for: saslprep@1.0.3 want: ^3.0.3
+97 silly fetch manifest memory-pager@^1.0.2
+98 http fetch GET 200 https://registry.npmjs.org/memory-pager 811ms (cache miss)
+99 timing idealTree:node_modules/saslprep Completed in 812ms
+100 silly placeDep ROOT memory-pager@1.5.0 OK for: sparse-bitfield@3.0.3 want: ^1.0.2
+101 timing idealTree:node_modules/sparse-bitfield Completed in 1ms
+102 timing idealTree:node_modules/memory-pager Completed in 0ms
+103 timing idealTree:node_modules/string_decoder Completed in 0ms
+104 timing idealTree:node_modules/util-deprecate Completed in 0ms
+105 timing idealTree:buildDeps Completed in 4281ms
+106 timing idealTree:fixDepFlags Completed in 1ms
+107 timing idealTree Completed in 4347ms
+108 timing reify:loadTrees Completed in 4348ms
+109 timing reify:diffTrees Completed in 3ms
+110 silly reify moves {}
+111 timing reify:retireShallow Completed in 1ms
+112 timing reify:createSparse Completed in 8ms
+113 timing reify:trashOmits Completed in 0ms
+114 timing reify:loadBundles Completed in 0ms
+115 silly tarball no local data for memory-pager@https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz. Extracting by manifest.
+116 silly tarball no local data for sparse-bitfield@https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz. Extracting by manifest.
+117 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+118 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+119 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+120 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+121 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+122 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz. Extracting by manifest.
+123 silly tarball no local data for require-at@https://registry.npmjs.org/require-at/-/require-at-1.0.6.tgz. Extracting by manifest.
+124 silly tarball no local data for optional-require@https://registry.npmjs.org/optional-require/-/optional-require-1.1.8.tgz. Extracting by manifest.
+125 silly tarball no local data for saslprep@https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz. Extracting by manifest.
+126 silly tarball no local data for denque@https://registry.npmjs.org/denque/-/denque-1.5.1.tgz. Extracting by manifest.
+127 silly tarball no local data for bson@https://registry.npmjs.org/bson/-/bson-1.1.6.tgz. Extracting by manifest.
+128 silly tarball no local data for bl@https://registry.npmjs.org/bl/-/bl-2.2.1.tgz. Extracting by manifest.
+129 silly tarball no local data for mongodb@https://registry.npmjs.org/mongodb/-/mongodb-3.7.3.tgz. Extracting by manifest.
+130 silly tarball no local data for node-red-node-mongodb@https://registry.npmjs.org/node-red-node-mongodb/-/node-red-node-mongodb-0.2.5.tgz. Extracting by manifest.
+131 http fetch GET 200 https://registry.npmjs.org/memory-pager/-/memory-pager-1.5.0.tgz 167ms (cache miss)
+132 timing reifyNode:node_modules/memory-pager Completed in 184ms
+133 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 165ms (cache miss)
+134 timing reifyNode:node_modules/util-deprecate Completed in 188ms
+135 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 163ms (cache miss)
+136 timing reifyNode:node_modules/string_decoder Completed in 192ms
+137 http fetch GET 200 https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz 175ms (cache miss)
+138 timing reifyNode:node_modules/sparse-bitfield Completed in 196ms
+139 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 188ms (cache miss)
+140 timing reifyNode:node_modules/process-nextick-args Completed in 219ms
+141 http fetch GET 200 https://registry.npmjs.org/node-red-node-mongodb/-/node-red-node-mongodb-0.2.5.tgz 132ms (cache miss)
+142 timing reifyNode:node_modules/node-red-node-mongodb Completed in 227ms
+143 http fetch GET 200 https://registry.npmjs.org/require-at/-/require-at-1.0.6.tgz 188ms (cache miss)
+144 timing reifyNode:node_modules/require-at Completed in 237ms
+145 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 298ms (cache miss)
+146 timing reifyNode:node_modules/core-util-is Completed in 340ms
+147 http fetch GET 200 https://registry.npmjs.org/optional-require/-/optional-require-1.1.8.tgz 316ms (cache miss)
+148 timing reifyNode:node_modules/optional-require Completed in 370ms
+149 http fetch GET 200 https://registry.npmjs.org/denque/-/denque-1.5.1.tgz 329ms (cache miss)
+150 timing reifyNode:node_modules/denque Completed in 390ms
+151 http fetch GET 200 https://registry.npmjs.org/bl/-/bl-2.2.1.tgz 326ms (cache miss)
+152 timing reifyNode:node_modules/bl Completed in 400ms
+153 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 367ms (cache miss)
+154 timing reifyNode:node_modules/isarray Completed in 406ms
+155 http fetch GET 200 https://registry.npmjs.org/saslprep/-/saslprep-1.0.3.tgz 376ms (cache miss)
+156 timing reifyNode:node_modules/saslprep Completed in 433ms
+157 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 398ms (cache miss)
+158 timing reifyNode:node_modules/readable-stream Completed in 443ms
+159 http fetch GET 200 https://registry.npmjs.org/bson/-/bson-1.1.6.tgz 406ms (cache miss)
+160 timing reifyNode:node_modules/bson Completed in 476ms
+161 http fetch GET 200 https://registry.npmjs.org/mongodb/-/mongodb-3.7.3.tgz 457ms (cache miss)
+162 timing reifyNode:node_modules/mongodb Completed in 545ms
+163 timing reify:unpack Completed in 546ms
+164 timing reify:unretire Completed in 0ms
+165 timing build:queue Completed in 4ms
+166 timing build:deps Completed in 5ms
+167 timing build Completed in 5ms
+168 timing reify:build Completed in 6ms
+169 timing reify:trash Completed in 0ms
+170 timing reify:save Completed in 18ms
+171 timing reify Completed in 4946ms
+172 silly ADD node_modules/memory-pager
+173 silly ADD node_modules/sparse-bitfield
+174 silly ADD node_modules/util-deprecate
+175 silly ADD node_modules/string_decoder
+176 silly ADD node_modules/process-nextick-args
+177 silly ADD node_modules/isarray
+178 silly ADD node_modules/core-util-is
+179 silly ADD node_modules/require-at
+180 silly ADD node_modules/readable-stream
+181 silly ADD node_modules/saslprep
+182 silly ADD node_modules/optional-require
+183 silly ADD node_modules/denque
+184 silly ADD node_modules/bson
+185 silly ADD node_modules/bl
+186 silly ADD node_modules/mongodb
+187 silly ADD node_modules/node-red-node-mongodb
+188 timing command:install Completed in 4951ms
+189 verbose exit 0
+190 timing npm Completed in 5041ms
+191 info ok

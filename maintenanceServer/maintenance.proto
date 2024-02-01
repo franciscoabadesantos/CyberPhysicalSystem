@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+enum MachineStatus {
+  IDLE = 0;
+  RUNNING = 1;
+  BROKEN_DOWN = 2;
+}
+
+message MachineState {
+  MachineStatus status = 1;
+  int32 id = 2;
+  int32 runtime_hours = 3;
+  int32 remaining_lifetime = 4;
+}
+
+enum MaintenanceType {
+  PREVENTIVE = 0;
+  CORRECTIVE = 1;
+  PREDICTIVE = 2;
+  NONE = 3;
+}
+
+message MaintenanceRecommendation {
+  int32 id = 1;
+  MaintenanceType type = 2;
+}
+
+message RecommendationList {
+  repeated MaintenanceRecommendation recommendations = 1;
+}
+
+service MaintenanceRecommendationService {
+  rpc GetMaintenanceRecommendations(MachineState) returns (RecommendationList) {}
+}

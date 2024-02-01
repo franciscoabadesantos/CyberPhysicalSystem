@@ -1,0 +1,34 @@
+services:
+    java:
+        container_name: estimator_java
+        build: /javaserver
+        ports:
+            - 50052:50052
+        networks:
+            - gRPC
+    api:
+        container_name: client_python
+        build: /client
+        ports:
+            - 5000:5000
+        networks:
+            - gRPC
+    nodered:
+        container_name: nodered
+        build: /nodered
+        ports:
+            - 1880:1880
+        networks:
+            - gRPC
+    python:
+        container_name: maintenance_python
+        build: /maintenanceServer
+        ports:
+            - 50051:50051
+        networks:
+            - gRPC
+
+
+networks:
+    gRPC:
+        name: gRPC
